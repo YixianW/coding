@@ -1,0 +1,424 @@
+================================================================================
+CMU 15-113 PROJECT 1: PERSONAL PORTFOLIO WEBSITE
+FILES MANIFEST & QUICK REFERENCE
+================================================================================
+
+PROJECT ROOT DIRECTORY: /workspaces/coding/
+
+================================================================================
+ESSENTIAL FILES (Required for Submission)
+================================================================================
+
+✅ index.html (298 lines, 18 KB)
+   - Main HTML file with all sections
+   - Semantic structure (nav, about, projects, interests, experiences, etc.)
+   - Accessibility features (skip link, ARIA attributes, semantic tags)
+   - AI usage documented in comments
+   - Personal content pre-filled (Yixian Wang)
+   - 6 major sections + footer + header
+
+✅ styles.css (1,108 lines, 23 KB)
+   - Complete responsive stylesheet
+   - CSS variables system (colors, typography, spacing)
+   - Responsive breakpoints: Desktop (1024px+), Tablet (768-1024px), Mobile (<768px)
+   - Professional design (minimal, editorial, business-focused)
+   - Lightbox modal styling
+   - Mobile menu animation
+   - Print styles included
+   - AI usage documented in comments
+
+✅ script.js (182 lines, 6.3 KB)
+   - Lightbox modal functionality (click to open, ESC to close)
+   - Mobile navigation toggle (hamburger menu)
+   - Accessibility features (focus management, ARIA updates)
+   - Smooth scroll offset for sticky header
+   - Skip link functionality
+   - AI usage documented in comments
+
+✅ assets/ (Directory)
+   - Placeholder for 12 images (empty until you add images)
+   - Image filenames expected:
+     * profile.jpg
+     * project-portfolio.png
+     * project-ai-ads.png
+     * project-edtech-ar.png
+     * seal-01.jpg, seal-02.jpg, seal-03.jpg, seal-04.jpg
+     * cetacean-talk-01.jpg, cetacean-talk-02.jpg
+     * ocean-speech-01.jpg, ocean-speech-02.jpg
+
+================================================================================
+DOCUMENTATION FILES (For Your Reference)
+================================================================================
+
+📖 README.md (3.3 KB)
+   - Project overview
+   - File structure and setup instructions
+   - Customization guide (colors, fonts, breakpoints)
+   - Accessibility features checklist
+   - Browser support and performance tips
+   - Troubleshooting guide
+   - Credits and attribution
+
+📖 CODE_OVERVIEW.md (7.5 KB)
+   - HTML structure explanation
+   - CSS architecture and organization
+   - JavaScript functionality breakdown
+   - Responsive behavior by screen size
+   - Accessibility features by component
+   - AI usage documentation
+   - Performance notes and file sizes
+
+📖 PROJECT_SUMMARY.txt (9 KB)
+   - Complete feature checklist
+   - Design system details (colors, typography, spacing)
+   - Testing checklist
+   - Deployment steps
+   - What to customize
+   - Next steps
+
+📖 SUBMISSION_CHECKLIST.md (8.7 KB)
+   - 10-item final verification checklist
+   - Content accuracy checks
+   - Responsive design tests
+   - JavaScript functionality tests
+   - Accessibility verification
+   - Deployment checklist
+   - Launch commands
+
+📖 REFERENCE_GUIDE.md (10 KB)
+   - Complete reference manual
+   - Quick start (3 steps)
+   - Responsive design table
+   - Key features summary
+   - Customization guide
+   - Testing checklist
+   - FAQ section
+   - Support troubleshooting
+
+📖 QUICKSTART.sh (3.3 KB)
+   - Executable quick start script
+   - Step-by-step instructions
+   - File listings
+   - Testing checklist
+   - Documentation references
+
+================================================================================
+HOW TO USE THESE FILES
+================================================================================
+
+FOR FIRST-TIME SETUP:
+1. Read: README.md (sections 1-3)
+2. Add images to assets/ folder (see "Setup Instructions")
+3. Run: QUICKSTART.sh (optional, just echoes instructions)
+
+FOR UNDERSTANDING THE CODE:
+1. Read: CODE_OVERVIEW.md (structure and explanation)
+2. Read: index.html and styles.css (with inline comments)
+3. Read: script.js (commented JavaScript)
+
+BEFORE FINAL SUBMISSION:
+1. Check: SUBMISSION_CHECKLIST.md (10-item verification)
+2. Test: All interactive features (lightbox, mobile menu)
+3. Deploy: Follow README.md deployment steps
+
+FOR TROUBLESHOOTING:
+1. See: REFERENCE_GUIDE.md (FAQ section)
+2. See: README.md (Troubleshooting section)
+3. See: browser console (F12) for errors
+
+FOR CUSTOMIZATION:
+1. Read: CODE_OVERVIEW.md (Customization section)
+2. Edit: index.html (for content)
+3. Edit: styles.css (for design)
+
+================================================================================
+FILE RELATIONSHIPS
+================================================================================
+
+index.html
+├── Links to: styles.css (in <head>)
+├── Links to: script.js (in <body>)
+├── Contains: All HTML structure
+├── References: assets/profile.jpg (and 11 other images)
+└── Documented by: CODE_OVERVIEW.md, REFERENCE_GUIDE.md
+
+styles.css
+├── Styles: All elements in index.html
+├── Responsive: 4 media query breakpoints
+├── Variables: Colors, fonts, spacing
+└── Documented by: CODE_OVERVIEW.md, README.md
+
+script.js
+├── Powers: Lightbox modal for seal gallery
+├── Powers: Mobile hamburger menu toggle
+├── Enhances: Accessibility (skip link, focus)
+└── Documented by: CODE_OVERVIEW.md, REFERENCE_GUIDE.md
+
+assets/
+├── Contains: 12 placeholder image locations
+├── Used by: index.html (src attributes)
+├── Expected: profile.jpg + 11 others
+└── Documented by: README.md, REFERENCE_GUIDE.md
+
+================================================================================
+CONTENT PRE-FILLED IN HTML
+================================================================================
+
+Personal Information:
+✓ Name: Yixian (Aria) Wang
+✓ Tagline: MBA Candidate at CMU Tepper | Product & Marketing Leader
+✓ Bio: 3 paragraphs covering education, experience, interests
+✓ Skills: 7 professional competencies listed
+
+Sections:
+✓ About: Profile photo + bio + skills
+✓ Projects: 3 cards (Portfolio, AI Ads, EdTech AR)
+✓ Interests & Craft: Stone seal cutting (篆刻) - 4 image gallery
+✓ Community Impact: 2 experience cards (Cetacean, Ocean Speech)
+✓ Connect: Email, LinkedIn, Instagram with proper links
+
+Navigation:
+✓ Top sticky header
+✓ 5 anchor links (About, Projects, Interests, Community, Connect)
+✓ Logo link to top
+✓ Mobile hamburger menu (auto-hides on desktop)
+
+Footer:
+✓ Name and tagline
+✓ Contact links
+✓ Credits line: "All photos © Yixian (Aria) Wang"
+✓ Copyright notice
+
+================================================================================
+DESIGN SYSTEM (DEFINED IN CSS)
+================================================================================
+
+Colors:
+- Background: #ffffff (white)
+- Text: #1a1a1a (dark gray)
+- Text Light: #666666 (medium gray)
+- Accent: #2c5aa0 (professional blue)
+- Border: #e5e5e5 (light gray)
+
+Typography:
+- Font Family: System sans-serif (-apple-system, Segoe UI, Roboto)
+- Sizes: 0.75rem to 2.5rem (8 scale steps)
+- Line Heights: 1.2 (tight) to 1.75 (relaxed)
+
+Spacing:
+- Scale: xs (0.5rem) to 3xl (6rem)
+- Responsive adjustments at breakpoints
+- Consistent throughout layout
+
+Responsive Breakpoints:
+- Desktop: 1024px and up
+- Tablet: 768px to 1024px
+- Mobile: Below 768px
+- Small Mobile: Below 480px
+
+================================================================================
+JAVASCRIPT FEATURES
+================================================================================
+
+Lightbox Modal:
+├── Trigger: Click on .seal-image-button elements
+├── Opens: #seal-lightbox modal with image + caption
+├── Close Methods:
+│   ├── ESC key
+│   ├── Click close button (×)
+│   └── Click backdrop outside image
+├── Accessibility:
+│   ├── role="dialog" on modal
+│   ├── aria-hidden toggles true/false
+│   ├── aria-label on modal
+│   ├── Focus trapped in modal
+│   └── Scroll prevented while open
+└── Customizable: Edit sealData array for different images
+
+Mobile Navigation Toggle:
+├── Trigger: Click #mobile-nav-toggle button
+├── Effect: Toggles .active class on #nav-menu
+├── Animation:
+│   ├── Menu slides down/up
+│   ├── Hamburger animates to ×
+│   └── 300ms smooth transition
+├── Auto-Close:
+│   ├── Closes when nav link clicked
+│   ├── Updates aria-expanded attribute
+│   └── Mobile only (<768px)
+└── Accessibility: Full keyboard support
+
+Smooth Scroll:
+├── Applies to: All anchor link clicks
+├── Adjustment: Offset for sticky header height
+├── Behavior: smooth scroll-behavior
+└── Browser Compatible: Modern browsers
+
+================================================================================
+ACCESSIBILITY FEATURES
+================================================================================
+
+Semantic HTML:
+✓ Proper heading hierarchy (H1 once, H2 for sections, H3 for subsections)
+✓ <nav> with role="navigation"
+✓ <main id="main-content">
+✓ <section> with descriptive IDs
+✓ <article> for cards
+
+ARIA Attributes:
+✓ role="navigation" on navbar
+✓ role="dialog" on lightbox modal
+✓ aria-label on buttons and links
+✓ aria-hidden on modal (toggle true/false)
+✓ aria-expanded on mobile menu toggle
+✓ aria-label on hamburger button
+
+Alt Text:
+✓ Profile photo: "Yixian (Aria) Wang - Product and Marketing Leader"
+✓ Project images: Descriptive alt text
+✓ Seal images: "Stone seal carving featuring..." (specific descriptions)
+✓ Experience photos: Descriptive event information
+
+Keyboard Navigation:
+✓ Tab through all interactive elements
+✓ Shift+Tab to go backwards
+✓ Enter to activate buttons/links
+✓ ESC to close lightbox modal
+✓ No keyboard traps
+
+Focus Management:
+✓ Visible outline on all focusable elements
+✓ Focus outline: 2px solid accent color
+✓ Focus outline offset: 2px
+✓ Lightbox traps focus (stays in modal)
+✓ Focus restored on modal close
+
+Color Contrast:
+✓ Text vs background: 4.5:1 (WCAG AA)
+✓ No color-only information
+✓ Sufficient contrast in all UI elements
+
+Skip Link:
+✓ Visible only on focus (top left of page)
+✓ Jumps to #main-content when clicked
+✓ Background: accent color
+✓ White text for contrast
+
+================================================================================
+HOW TO DEPLOY
+================================================================================
+
+Step 1: Add Images
+- Place 12 images in assets/ folder
+- Keep filenames exactly as referenced in HTML
+- Recommended sizes: 400x400px to 800x600px
+
+Step 2: Test Locally
+- python -m http.server 8000
+- Visit http://localhost:8000
+- Test all features (menu, lightbox, links, responsiveness)
+
+Step 3: Push to GitHub
+- git add .
+- git commit -m "Add portfolio website"
+- git push origin main
+
+Step 4: Enable GitHub Pages
+- Repository Settings > Pages
+- Deploy from a branch: main
+- Save
+- Your site: https://username.github.io/repo-name/
+
+Step 5: Verify Live Site
+- Open the GitHub Pages URL
+- Check images load
+- Test mobile menu (resize to <768px)
+- Test lightbox
+- Test links
+- No console errors (F12)
+
+================================================================================
+TESTING CHECKLIST (Before Submit)
+================================================================================
+
+Responsiveness:
+☐ Desktop (1200px): 3-col grids, full nav
+☐ Tablet (900px): 2-col grids, stacked nav
+☐ Mobile (500px): 1-col layout, hamburger menu
+☐ No horizontal scrolling on any size
+
+Interactivity:
+☐ Hamburger menu works on mobile
+☐ Lightbox opens when clicking seal image
+☐ ESC key closes lightbox
+☐ Click outside lightbox closes it
+☐ Nav links work (scroll to sections)
+☐ Email link works
+☐ LinkedIn link opens in new tab
+☐ Instagram link opens in new tab
+
+Accessibility:
+☐ Tab through entire site (all elements accessible)
+☐ Focus outline visible on all buttons/links
+☐ Alt text on all images
+☐ No color contrast issues
+☐ No keyboard traps
+☐ Skip link works
+
+Performance:
+☐ Page loads quickly
+☐ No console errors (F12)
+☐ Images load properly
+☐ Transitions are smooth
+☐ No layout shift
+
+Content:
+☐ All text is correct
+☐ Names and email correct
+☐ Links are proper URLs
+☐ Images are appropriately placed
+☐ No typos or grammar errors
+
+================================================================================
+GETTING HELP
+================================================================================
+
+For Setup Questions:
+→ README.md (Sections 1-3)
+
+For Code Understanding:
+→ CODE_OVERVIEW.md
+→ Inline comments in HTML, CSS, JavaScript
+
+For Deployment:
+→ README.md (Sections 4 and 5)
+→ PROJECT_SUMMARY.txt (Deployment section)
+
+For Troubleshooting:
+→ REFERENCE_GUIDE.md (FAQ section)
+→ README.md (Troubleshooting section)
+
+For Customization:
+→ REFERENCE_GUIDE.md (Customization section)
+→ CODE_OVERVIEW.md
+
+For Final Checks:
+→ SUBMISSION_CHECKLIST.md (10-item verification)
+
+================================================================================
+SUCCESS!
+================================================================================
+
+You now have a complete, professional portfolio website ready for:
+✓ Job applications (Product, PMM, Tech Strategy)
+✓ GitHub Pages deployment
+✓ Full customization
+✓ Professional credibility
+
+Next step: Add your 12 images and deploy!
+
+Questions? Check the documentation files listed above.
+
+Good luck! 🚀
+
+================================================================================
